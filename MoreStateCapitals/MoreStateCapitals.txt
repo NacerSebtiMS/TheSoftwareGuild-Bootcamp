@@ -1,0 +1,50 @@
+Alabama::Montgomery::205764::155.4
+Alaska::Juneau::31275::2716.7
+Arizona::Phoenix::1445632::474.9
+Arkansas::Little Rock::193524::116.2
+California::Sacramento::466488::97.2
+Colorado::Denver::600158::153.4
+Connecticut::Hartford::124775::17.3
+Delaware::Dover::36047::22.4
+Florida::Tallahassee::181376::95.7
+Georgia::Atlanta::420003::131.7
+Hawaii::Honolulu::337256::85.7
+Idaho::Boise City::205671::63.8
+Illinois::Springfield::116250::54
+Indiana::Indianapolis::820445::361.5
+Iowa::Des Moines::203433::75.8
+Kansas::Topeka::127473::56
+Kentucky::Frankfort::25527::14.7
+Louisiana::Baton Rouge::229493::76.8
+Maine::Augusta::19136::55.4
+Maryland::Annapolis::38394::6.73
+Massachusetts::Boston::617594::48.4
+Michigan::Lansing::114297::35
+Minnesota::St. Paul::285068::52.8
+Mississippi::Jackson::173514::104.9
+Missouri::Jefferson City::43079::27.3
+Montana::Helena::28190::14
+Nebraska::Lincoln::258379::74.6
+Nevada::Carson City::55274::143.4
+New Hampshire::Concord::42695::64.3
+New Jersey::Trenton::84913::7.66
+New Mexico::Santa Fe::67947::37.3
+New York::Albany::97856::21.4
+North Carolina::Raleigh::403892::114.6
+North Dakota::Bismarck::61272::26.9
+Ohio::Columbus::787033::210.3
+Oklahoma::Oklahoma City::579999::607
+Oregon::Salem::154637::45.7
+Pennsylvania::Harrisburg::49528::8.11
+Rhode Island::Providence::178042::18.5
+South Carolina::Columbia::129272::125.2
+South Dakota::Pierre::13646::13
+Tennessee::Nashville-Davidson::601222::473.3
+Texas::Austin::790390::251.5
+Utah::Salt Lake City::186440::109.1
+Vermont::Montpelier::7855::10.2
+Virginia::Richmond::204214::60.1
+Washington::Olympia::46478::16.7
+West Virginia::Charleston::51400::31.6
+Wisconsin::Madison::233209::68.7
+Wyoming::Cheyenne::59466::21.1
