@@ -22,9 +22,9 @@ public class Deck {
     private String link = " of ";
 
 
-    private ArrayList<String> deck;
-    private ArrayList<String> player1 = new ArrayList<String>();
-    private ArrayList<String> player2 = new ArrayList<String>();
+    private ArrayList<Card> deck;
+    private ArrayList<Card> player1 = new ArrayList<>();
+    private ArrayList<Card> player2 = new ArrayList<>();
 
     private int cards = 52; //sets the number of card per game
 
@@ -37,22 +37,22 @@ public class Deck {
     }
 
     private void createDeck(){
-        deck = new ArrayList<String>();
+        deck = new ArrayList<>();
         for (int i = 0; i < colors.length; i++){
             for (int j = 0; j < numbers.length; j++){
-                deck.add( numbers[j]+link+colors[i] );
+                deck.add( new Card(numbers[j]+link+colors[i],"Regular card.") );
             }
         }
     }
 
-    public void show(ArrayList<String> cards){
+    public void show(ArrayList<Card> cards){
         for(int i = 0; i < cards.size(); i++){
-            System.out.println(i+1 +" - "+cards.get(i));
+            System.out.println(i+1 +" - "+cards.get(i).getTitle());
         }
     }
 
     public void shuffle(){
-        ArrayList<String> temp_deck = new ArrayList<String>();
+        ArrayList<Card> temp_deck = new ArrayList<>();
         int index;
         Random rand = new Random();
         while(deck.size()-52+this.cards!=0){
@@ -62,8 +62,8 @@ public class Deck {
         this.deck = temp_deck;
     }
 
-    public ArrayList<String> draw(int n){
-        ArrayList<String> d = new ArrayList<String>();
+    public ArrayList<Card> draw(int n){
+        ArrayList<Card> d = new ArrayList<>();
         int i=n;
         while(i>0 && this.deck.size()>0){
             d.add(this.deck.remove(0));
@@ -73,12 +73,12 @@ public class Deck {
         return d;
     }
 
-    public ArrayList<String> playCard(ArrayList<String> player,int c){
-        System.out.println("Card played : "+player.remove(c));
+    public ArrayList<Card> playCard(ArrayList<Card> player,int c){
+        System.out.println("Card played : "+player.remove(c).getTitle());
         return player;           
     }
 
-    public ArrayList<String> player_turn(ArrayList<String> player,int p,int d){
+    public ArrayList<Card> player_turn(ArrayList<Card> player,int p,int d){
         System.out.println("_____");
         System.out.println("Player"+p+" turn!");
         if (player.isEmpty()){
