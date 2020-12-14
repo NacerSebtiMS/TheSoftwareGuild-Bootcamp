@@ -2,16 +2,25 @@ use PersonalTrainer;
 
 -- Use an aggregate to count the number of Clients.
 -- 500 rows
+
+select count(client.clientid) from client;
 -- ------------------
 
 -- Use an aggregate to count Client.BirthDate.
 -- The number is different than total Clients. Why?
 -- 463 rows
+
+select count(client.birthdate) from client;
 -- ------------------
 
 -- Group Clients by City and count them.
 -- Order by the number of Clients desc.
 -- 20 rows
+
+select client.city, count(client.clientid) as NumberOfClients
+from client
+group by client.city
+order by NumberOfClients desc;
 -- ------------------
 
 -- Calculate a total per invoice using only the InvoiceLineItem table.
@@ -19,6 +28,10 @@ use PersonalTrainer;
 -- You'll need an expression for the line item total: Price * Quantity.
 -- Aggregate per group using SUM().
 -- 1000 rows
+
+select InvoiceLineItem.invoiceID, SUM(InvoiceLineItem.Price * InvoiceLineItem.Quantity) as Total
+from InvoiceLineItem
+group by InvoiceLineItem.invoiceID;
 -- ------------------
 
 -- Calculate a total per invoice using only the InvoiceLineItem table.
@@ -26,11 +39,20 @@ use PersonalTrainer;
 -- Only include totals greater than $500.00.
 -- Order from lowest total to highest.
 -- 234 rows
+
+select invoiceID, Total
+from(
+select InvoiceLineItem.invoiceID, SUM(InvoiceLineItem.Price * InvoiceLineItem.Quantity) as Total
+from InvoiceLineItem
+group by InvoiceLineItem.invoiceID) tab
+where Total >= 500;
 -- ------------------
 
 -- Calculate the average line item total
 -- grouped by InvoiceLineItem.Description.
 -- 3 rows
+
+
 -- ------------------
 
 -- Select ClientId, FirstName, and LastName from Client
