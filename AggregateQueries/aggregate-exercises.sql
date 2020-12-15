@@ -51,8 +51,11 @@ where Total >= 500;
 -- Calculate the average line item total
 -- grouped by InvoiceLineItem.Description.
 -- 3 rows
-
-
+select tab.Description, avg(tab.LineTotal) as Average
+from(
+select InvoiceLineItem.Description, InvoiceLineItem.Price * InvoiceLineItem.Quantity as LineTotal
+from InvoiceLineItem) tab
+group by Description;
 -- ------------------
 
 -- Select ClientId, FirstName, and LastName from Client
@@ -60,12 +63,24 @@ where Total >= 500;
 -- Paid is Invoice.InvoiceStatus = 2.
 -- Order by LastName, then FirstName.
 -- 146 rows
+
+select ClientId, FirstName, LastName
+from (
+select Client.ClientId, Client.FirstName, Client.LastName, SUM(invoiceLineItem.Price * invoiceLineItem.Quantity) as Total
+from Client
+inner join invoice on Client.clientid = invoice.clientid
+inner join invoiceLineItem on invoiceLineItem.invoiceid = invoice.invoiceid
+where Invoice.InvoiceStatus = 2
+group by Client.ClientId) tab
+where tab.Total >= 1000
+order by LastName, FirstName;
 -- ------------------
 
 -- Count exercises by category.
 -- Group by ExerciseCategory.Name.
 -- Order by exercise count descending.
 -- 13 rows
+
 -- ------------------
 
 -- Select Exercise.Name along with the minimum, maximum,
