@@ -64,7 +64,9 @@ $(document).ready(function () {
 
 //        The background color of any table row should change to “WhiteSmoke” when the mouse pointer is hovering over the row.
 //        The background color of the row should return to white when the mouse pointer is no longer hovering over the row.
-  $('tr').hover(
+//        This applies to all rows in all tables except the first (header) row in a given table. The first (header) row in any table should not change appearance when the mouse pointer hovers over it.
+
+  $('td').parent().hover(
     // in callback
     function() {
         $(this).css('background-color', 'WhiteSmoke');
@@ -73,10 +75,6 @@ $(document).ready(function () {
     function() {
         $(this).css('background-color', '');
     });
-
-
-
-//        This applies to all rows in all tables except the first (header) row in a given table. The first (header) row in any table should not change appearance when the mouse pointer hovers over it.
 
 
 });
