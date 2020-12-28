@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Browser Events Lab</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/sticky-footer.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Banner + Nav -->
+            <div class="row" id="pageBannerAndNav">
+                <div class="col-md-12">
+                    <h1 class="text-center">Software Guild Hackathon</h1>
+                    <hr>
+                    <div class="text-center">
+                        <button type="button" id="mainButton" class="btn">Main</button>
+                        <button type="button" id="akronButton" class="btn">Akron</button>
+                        <button type="button" id="minneapolisButton" class="btn">Minneapolis</button>
+                        <button type="button" id="louisvilleButton" class="btn">Louisville</button>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            
+            <!-- Page Content -->
+            <div class="row" id="pageContent">
+                <!-- Main Info -->
+                <div class="col-md-12" id="mainInfoDiv">
+                    <h3>Main</h3>
+                    <p>
+                        Nulla dictum massa id laoreet aliquet. Nulla imperdiet sem et efficitur ullamcorper. Quisque scelerisque lorem at nisi finibus, iaculis iaculis nunc placerat. Vestibulum non rutrum libero. Sed id viverra dolor, ac molestie odio. In vitae ultricies sem. Vivamus eu suscipit nunc. Fusce sit amet lobortis nunc. Donec eu arcu a quam facilisis faucibus commodo et magna. Proin eu magna a metus eleifend venenatis. Cras in nibh convallis, viverra leo vel, condimentum sapien.
+                    </p>
+                    <p>
+                        Maecenas sed eros dolor. In faucibus tristique est, vel efficitur ex euismod vel. Mauris mattis id tortor ac dignissim. Praesent non nunc ultrices lectus fermentum fermentum. Nunc eget massa sed ligula ornare blandit at ac libero. Aliquam dignissim justo at ante elementum, nec pretium tellus pretium. Nam in arcu blandit, imperdiet est at, tincidunt dolor. Curabitur a imperdiet nisi. Nunc euismod nulla velit, eu eleifend risus ultricies ac. Ut at turpis eu arcu imperdiet ullamcorper id vitae est. Curabitur elementum arcu a risus hendrerit, sed sodales risus elementum. Fusce id nulla vitae ex blandit pretium.
+                    </p>
+                    <p>
+                        Phasellus tellus arcu, dignissim id vehicula quis, bibendum non enim. Quisque accumsan lacus eget diam pharetra iaculis. Nullam nulla eros, tristique sed rhoncus eget, finibus sit amet ipsum. Integer lacus magna, pulvinar lobortis pretium ac, dapibus vitae sem. Cras ut scelerisque leo. Maecenas et elit fermentum magna consequat venenatis nec quis urna. Phasellus aliquet accumsan quam viverra fermentum. Proin nec lectus velit. Aliquam ut accumsan nisl, in blandit tellus. Curabitur ornare ligula vel ex commodo malesuada. Nulla blandit, dolor a efficitur placerat, dui quam posuere ex, id condimentum urna nunc et libero. Quisque sagittis, est vitae placerat congue, mauris nunc ornare urna, id finibus sapien eros vel risus. Aliquam erat volutpat. Cras ullamcorper nisl ac mauris vulputate, quis elementum libero gravida. Integer fermentum neque quam, ut lobortis massa commodo vel. Maecenas non facilisis augue.
+                    </p>
+                    <p>
+                        Praesent a malesuada nisl. Etiam risus justo, consectetur quis tellus fermentum, gravida cursus nibh. Ut in turpis sit amet erat vestibulum eleifend non interdum mi. Morbi laoreet ligula ut lectus accumsan laoreet sit amet vitae arcu. Aenean sapien tellus, blandit in faucibus sit amet, ullamcorper at nibh. Vivamus consequat sed libero vel vulputate. Ut consectetur justo nisl, vel mattis diam aliquet id.
+                    </p>
+                    <p>
+                        Maecenas imperdiet condimentum mollis. Duis at arcu nec neque gravida euismod sollicitudin nec nisl. Maecenas dapibus elit mauris, non fermentum orci bibendum ac. Morbi est odio, laoreet quis interdum bibendum, cursus vitae massa. Vestibulum vel odio nisi. Phasellus nec sem interdum, aliquet dui at, hendrerit augue. Etiam risus lorem, iaculis sit amet nibh sit amet, viverra dictum dolor. Morbi convallis eleifend dui. Vestibulum ac purus in arcu rhoncus lobortis ut sit amet sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere mattis ipsum, et pellentesque erat ornare id. Morbi ac porta elit, sed lacinia tortor. Sed scelerisque id velit sed tincidunt.
+                    </p>
+                </div>
+                
+                <!-- Akron Info -->
+                <div class="col-md-12" id="akronInfoDiv">
+                    <h3>Akron Events</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum magna arcu, congue sit amet mattis quis, molestie a sem. Praesent quis orci luctus nisl faucibus aliquam ut vel sapien. Proin eu imperdiet erat, nec convallis odio. Quisque sed auctor sapien. Proin et dolor consequat, rhoncus quam quis, finibus lorem. Duis mattis ut libero quis blandit. Sed at sapien pharetra, venenatis tortor non, bibendum arcu. Pellentesque venenatis justo ultricies arcu accumsan, sed tempus nibh pulvinar.    
+                    </p>
+                    
+                    <p>
+                    Ut ante massa, placerat nec auctor in, pharetra vel velit. Praesent eu scelerisque lectus. Duis vitae metus rutrum, pretium mi et, mattis metus. Aenean est nunc, commodo nec mauris non, luctus lobortis tortor. Nam quis fermentum ligula. Donec nibh nunc, tincidunt suscipit aliquam in, sollicitudin quis sem. Ut facilisis magna sit amet arcu ornare tempor. Nulla sed aliquet massa. Fusce aliquam enim non tempor feugiat. Integer a dui ut lectus euismod ultrices.
+                    </p>
+                    
+                    <table class="table">
+                        <tr bgcolor="AliceBlue">
+                            <th>
+                                Donec
+                            </th>
+                            <th>
+                                Tempor
+                            </th>
+                            <th>
+                                Metus
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Phasellus turpis tortor, tristique in fringilla eu, aliquam eget est. Sed imperdiet ipsum id ante.
+                            </td>
+                            <td>
+                                Curabitur sollicitudin nunc in lacus scelerisque fermentum. Duis molestie, lectus vel bibendum efficitur, nisi ante.
+                            </td>
+                            <td>
+                                Proin blandit metus ac dolor vulputate, sit amet fringilla ipsum scelerisque. Aliquam nec eleifend sapien. Morbi euismod, eros nec accumsan faucibus, eros nulla condimentum mauris.
+                            </td>                            
+                        </tr>
+                        <tr>
+                            <td>
+                                Nunc magna tellus, iaculis sit amet eros lobortis, congue congue.
+                            </td>
+                            <td>
+                                Pellentesque vitae justo vitae orci rhoncus vestibulum. Aenean suscipit magna quam, non interdum tortor facilisis sit amet. Nam tincidunt tellus.
+                            </td>
+                            <td>
+                                Cras luctus erat ac rutrum pulvinar. Donec imperdiet, libero et euismod tempor, lectus augue tristique purus, a porttitor nulla libero.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <p>
+                    Nunc gravida aliquet fringilla. Maecenas aliquet molestie ligula non ultrices. Nunc fermentum elementum diam non sagittis. Etiam imperdiet massa massa, at suscipit lectus faucibus sed. Vivamus et malesuada leo, ac vehicula sem. Quisque volutpat sem sit amet libero pulvinar, commodo semper dui laoreet. Fusce venenatis nibh nibh, at cursus mauris consectetur id. Vestibulum ac orci feugiat, rhoncus eros consectetur, tempor eros. Duis ut finibus sapien. Nullam ac nulla vitae magna viverra aliquam sit amet ut justo. Proin ornare arcu posuere erat ornare, a consectetur leo tincidunt.
+                    </p>
+                    <p>
+                        <a class="btn btn-default" id="akronWeatherButton">Show Weather</a>
+                    </p>
+                    <div id="akronWeather">
+                        <img src="img/Sunny.png" width="75" height="75">
+                        <h3>Akron Weather</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue nisi, volutpat id diam id, luctus iaculis lorem. Etiam.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Minneapolis Info -->
+                <div class="col-md-12" id="minneapolisInfoDiv">
+                    <h3>Minneapolis Events</h3>
+                    <p>
+                        Praesent iaculis libero ut ligula vehicula, a cursus nisi convallis. Sed vitae mi urna. Phasellus consequat tellus eget libero lobortis, nec efficitur risus aliquam. Cras interdum pretium augue vitae gravida. Quisque nec accumsan augue. Vivamus et posuere eros, vel maximus erat. Nunc accumsan nulla in tempor ullamcorper. Phasellus in elementum augue. Quisque vitae diam.
+                    </p>
+                    
+                    <p>
+                    Curabitur eu ante ut metus porttitor tincidunt in vel elit. Nunc tempor diam sit amet fermentum accumsan. Aliquam viverra viverra est a posuere. Donec a nisi enim. Suspendisse non placerat metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam ligula nulla, finibus sit amet sollicitudin eget, volutpat quis lectus.  Vestibulum ac tortor sed leo lacinia consequat quis in diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nibh ultricies, feugiat leo eu, rutrum est. Pellentesque iaculis magna eu tortor varius gravida. Curabitur eget lacus sit amet arcu accumsan pretium. In quis ligula vitae lorem mattis semper eu quis ligula. Duis.
+                    </p>
+                    <p>
+                    Nunc gravida aliquet fringilla. Maecenas aliquet molestie ligula non ultrices. Nunc fermentum elementum diam non sagittis. Etiam imperdiet massa massa, at suscipit lectus faucibus sed. Vivamus et malesuada leo, ac vehicula sem. Quisque volutpat sem sit amet libero pulvinar, commodo semper dui laoreet. Fusce venenatis nibh nibh, at cursus mauris consectetur id. Vestibulum ac orci feugiat, rhoncus eros consectetur, tempor eros. Duis ut finibus sapien. Nullam ac nulla vitae magna viverra aliquam sit amet ut justo. Proin ornare arcu posuere erat ornare, a consectetur leo tincidunt.
+                    </p>
+                    
+                    <table class="table">
+                        <tr bgcolor="AliceBlue">
+                            <th>
+                                Donec
+                            </th>
+                            <th>
+                                Tempor
+                            </th>
+                            <th>
+                                Metus
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Curabitur ac lacus eu urna.
+                            </td>
+                            <td>
+                                Nulla facilisi. Mauris vitae eros auctor, sodales neque id, feugiat ex. Cras tempus imperdiet ultrices.
+                            </td>
+                            <td>
+                                Phasellus at porta odio, ut laoreet metus. Nullam.
+                            </td>                            
+                        </tr>
+                        <tr>
+                            <td>
+                                Nunc magna tellus, iaculis sit amet eros lobortis, congue congue.
+                            </td>
+                            <td>
+                                Pellentesque vitae justo vitae orci rhoncus vestibulum. Aenean suscipit magna quam, non interdum tortor facilisis sit amet. Nam tincidunt tellus.
+                            </td>
+                            <td>
+                                Cras luctus erat ac rutrum pulvinar. Donec imperdiet, libero et euismod tempor, lectus augue tristique purus, a porttitor nulla libero.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <p>
+                    Nunc gravida aliquet fringilla. Maecenas aliquet molestie ligula non ultrices. Nunc fermentum elementum diam non sagittis. Etiam imperdiet massa massa, at suscipit lectus faucibus sed. Vivamus et malesuada leo, ac vehicula sem. Quisque volutpat sem sit amet libero pulvinar, commodo semper dui laoreet. Fusce venenatis nibh nibh, at cursus mauris consectetur id. Vestibulum ac orci feugiat, rhoncus eros consectetur, tempor eros. Duis ut finibus sapien. Nullam ac nulla vitae magna viverra aliquam sit amet ut justo. Proin ornare arcu posuere erat ornare, a consectetur leo tincidunt.
+                    </p>                    
+                    <p>
+                        <a class="btn btn-default" id="minneapolisWeatherButton">Show Weather</a>
+                    </p>
+                    <div id="minneapolisWeather">
+                        <img src="img/Rain.png" width="75" height="75">
+                        <h3>Minneapolis Weather</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue nisi, volutpat id diam id, luctus iaculis lorem. Etiam.
+                        </p>
+                    </div>
+                </div>
+                <!-- Louisville Info -->
+                
+                <div class="col-md-12" id="louisvilleInfoDiv">
+                    <h3>Louisville Events</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum magna arcu, congue sit amet mattis quis, molestie a sem. Praesent quis orci luctus nisl faucibus aliquam ut vel sapien. Proin eu imperdiet erat, nec convallis odio. Quisque sed auctor sapien. Proin et dolor consequat, rhoncus quam quis, finibus lorem. Duis mattis ut libero quis blandit. Sed at sapien pharetra, venenatis tortor non, bibendum arcu. Pellentesque venenatis justo ultricies arcu accumsan, sed tempus nibh pulvinar.    
+                    </p>
+                    
+                    <p>
+                    Ut ante massa, placerat nec auctor in, pharetra vel velit. Praesent eu scelerisque lectus. Duis vitae metus rutrum, pretium mi et, mattis metus. Aenean est nunc, commodo nec mauris non, luctus lobortis tortor. Nam quis fermentum ligula. Donec nibh nunc, tincidunt suscipit aliquam in, sollicitudin quis sem. Ut facilisis magna sit amet arcu ornare tempor. Nulla sed aliquet massa. Fusce aliquam enim non tempor feugiat. Integer a dui ut lectus euismod ultrices.
+                    </p>
+                    
+                    <table class="table">
+                        <tr bgcolor="AliceBlue">
+                            <th>
+                                Donec
+                            </th>
+                            <th>
+                                Tempor
+                            </th>
+                            <th>
+                                Metus
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Phasellus turpis tortor, tristique in fringilla eu, aliquam eget est. Sed imperdiet ipsum id ante.
+                            </td>
+                            <td>
+                                Curabitur sollicitudin nunc in lacus scelerisque fermentum. Duis molestie, lectus vel bibendum efficitur, nisi ante.
+                            </td>
+                            <td>
+                                Proin blandit metus ac dolor vulputate, sit amet fringilla ipsum scelerisque. Aliquam nec eleifend sapien. Morbi euismod, eros nec accumsan faucibus, eros nulla condimentum mauris.
+                            </td>                            
+                        </tr>
+                        <tr>
+                            <td>
+                                Donec volutpat elementum lacus non convallis. Integer maximus vel nibh lacinia tristique. Phasellus mollis maximus ex, sit amet egestas lectus pellentesque at.
+                            </td>
+                            <td>
+                                In hac habitasse platea dictumst. Nullam ac est ante. Vestibulum pharetra turpis dignissim facilisis iaculis. Proin dictum.
+                            </td>
+                            <td>
+                                Curabitur consequat lacus nec elit convallis ultricies. Vivamus gravida, neque et vehicula sollicitudin, mi mauris vulputate nisl, id scelerisque mauris.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <p>
+                    Nulla pellentesque feugiat luctus. Integer pulvinar gravida neque a volutpat. Quisque dapibus eu justo id vulputate. Mauris tincidunt, tellus at blandit consequat, purus elit pretium risus, eget vulputate metus magna quis felis. Suspendisse non sodales ex. Ut in libero eget nibh commodo congue eget quis nibh. Phasellus vestibulum nisi ac ultrices lacinia. Pellentesque id rutrum nunc. Aliquam vel tortor ornare, gravida risus at, condimentum libero. Curabitur justo augue, molestie euismod lacus eu, tempus pretium eros. Vestibulum congue luctus ultrices. Morbi.
+                    </p>
+                    <p>
+                   Sed ut tristique massa, et condimentum enim. Suspendisse non interdum felis. Ut neque felis, elementum et volutpat sit amet, pretium id quam. Morbi ultrices quam libero, in pulvinar nisl interdum et. Nulla dictum metus non sodales dictum. Ut eget dolor lectus. Sed non diam eget est egestas tristique et quis dolor. Curabitur condimentum placerat sagittis. Curabitur eleifend a sem sit amet ornare. Nulla mi felis, semper ac eleifend id, bibendum vitae diam. Praesent sed dui commodo purus aliquam semper. Morbi malesuada pretium ex, at tempor mi rutrum id. Mauris sed maximus justo. Morbi mollis quam vitae nisl pretium maximus.  Duis ornare tellus nec magna rhoncus pellentesque. Suspendisse non libero velit. Aliquam sed finibus lectus. Nulla sed nunc gravida, varius sem vitae, egestas.
+                    </p>                    
+                    <p>
+                        <a class="btn btn-default" id="louisvilleWeatherButton">Show Weather</a>
+                    </p>
+                    <div id="louisvilleWeather">
+                        <img src="img/PartlyCloudy.png" width="75" height="75">
+                        <h3>Louisville Weather</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue nisi, volutpat id diam id, luctus iaculis lorem. Etiam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        
+        <footer class="footer" id="footer">
+            <p class="text-center" id="footerPlaceholder">&copy 2016 The Software Guild</p>
+        </footer>
+        
+        <script src="js/jquery-3.0.0.min.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+    
+</html>
