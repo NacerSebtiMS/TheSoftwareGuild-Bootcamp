@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { AuthentificationHomeComponent } from './authentification-home/authentification-home.component';
+
+const routes: Routes = [
+  { path: 'authentification', component: AuthentificationHomeComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
