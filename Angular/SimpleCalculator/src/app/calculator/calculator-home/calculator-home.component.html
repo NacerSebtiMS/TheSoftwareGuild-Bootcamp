@@ -1,1 +1,83 @@
-<p>calculator-home works!</p>
+<table class="tg" style="undefined;table-layout: fixed; width: 204px">
+  <colgroup>
+    <col style="width: 50.4px">
+    <col style="width: 51.2px">
+    <col style="width: 51.2px">
+    <col style="width: 51.2px">
+  </colgroup>
+  <tbody>
+
+    <tr>
+      <td class="tg-0lax" colspan="4" id="result-screen">{{result}}</td>
+    </tr>
+
+    <tr>
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-7" (click)="on7Click()">7</button>
+      </td>
+      
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-8" (click)="on8Click()">8</button>
+      </td>
+
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-9" (click)="on9Click()">9</button>
+      </td>
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-minus" (click)="onMinusClick()">-</button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-4" (click)="on4Click()">4</button>
+      </td>
+      
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-5" (click)="on5Click()">5</button>
+      </td>
+
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-6" (click)="on6Click()">6</button>
+      </td>
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-plus" (click)="onPlusClick()">+</button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-1" (click)="on1Click()">1</button>
+      </td>
+      
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-2" (click)="on2Click()">2</button>
+      </td>
+
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-3" (click)="on3Click()">3</button>
+      </td>
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-multiply" (click)="onMultiplyClick()">x</button>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-c" (click)="onResetClick()">C</button>
+      </td>
+      
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-0" (click)="on0Click()">0</button>
+      </td>
+
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-equals" (click)="onEqualsClick()">=</button>
+      </td>
+      <td class="tg-baqh">
+        <button type="button" class="btn" id="btn-divide" (click)="onDivideClick()">/</button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
