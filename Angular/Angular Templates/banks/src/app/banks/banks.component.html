@@ -1,0 +1,14 @@
+<div *ngIf="displayBanks">
+  <ul class="banks">
+    <li *ngFor="let bank of banks"
+      [class.selected]="bank === selectedBank"
+      (click)="onSelect(bank)">
+      <span class="badge">{{bank.id}}</span> {{bank.name}}
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="displayDetails">
+  <app-bank-detail [bank]="selectedBank"></app-bank-detail>
+  <button (click)="onReturn()">Return</button>
+</div>
