@@ -1,0 +1,23 @@
+h2 {
+    border-bottom: thin solid #0e2352;
+}
+
+.resume {
+    border: 1px solid #0e2352;
+    padding: 0 2vw;
+    width: 75%;
+    margin: 3vw auto;
+}
+
+.personalInfo {
+    background:#0e2352;
+    color: white;
+    text-align: center;
+    padding: .3vw 0 1vw 0;
+    margin: 0 -2vw;
+}
+
+.educationDates, .employmentDates { 
+    display: inline-block;
+    float:right;
+}

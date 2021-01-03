@@ -1,0 +1,30 @@
+<div>
+    <h2 class="projectTitle">Project 1 - The Dynamic Business Card</h2>
+    <hr />
+    <form>
+        <fieldset>
+            <legend>Modify Your Business Card</legend>
+            <label>First Name</label><input class="firstNameInput" (input)="firstName=$event.target.value" /><br /> 
+            <!-- <label>First Name</label><input [(ngModel)]="firstName" /><br /> -->
+            <label>Last Name</label><input class="lastNameInput" (input)="lastName=$event.target.value" /><br />
+            <!-- <label>Last Name</label><input [(ngModel)]="lastName" /><br /> --> 
+            <label>Phone Number</label><input class="phoneNumberInput" (input)="phoneNumber=$event.target.value" />
+            <!-- <label>Phone Name</label><input [(ngModel)]="phoneNumber" /><br /> --> 
+        </fieldset>
+    </form>
+
+    <button class="card">
+        <div class="row clearfix">
+            <div class="left big">{{phoneNumber}}</div>
+            <div class="right"><p><span class="big">E</span>rnst & <span class="big">S</span>ohn</p><p><span class="med no-space">A W</span><span class="small no-space">iley </span><span class="med no-space">B</span><span class="small no-space">rand</span></p></div>
+        </div>
+        <div class="row">
+            <p class="capitalize">{{firstName}} <span class="capitalize">{{lastName}}</span></p>
+            <p class="capitalize">Vice <span class="capitalize">P</span>resident</p>
+        </div>
+        <div class="row">
+            <p><span class="med">375 E</span><span class="small">xchange </span><span class="med">P</span><span class="small">lace </span><span class="med">N</span><span class="small">ew </span><span class="med">Y</span><span class="small">ork</span><span class="med">, N. Y. 10099 F</span><span class="small">ax </span><span class="med">201 555 6390 T</span><span class="small">elex </span><span class="med">10 4534</span>
+        </p>
+        </div>
+    </button>
+</div>

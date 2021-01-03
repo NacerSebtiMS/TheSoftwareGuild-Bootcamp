@@ -1,0 +1,19 @@
+.myServices {
+    padding: 20px;
+    border: 2px solid #000;
+    width: 25%;
+    margin: 13vw 30vw;
+    font-size: 20px;
+    background: #0e2352;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 9px 8px #aaa;
+}
+
+.businessCardTitle {
+    text-align:center;
+}
+
+ul {
+    list-style-type:disc;
+}
