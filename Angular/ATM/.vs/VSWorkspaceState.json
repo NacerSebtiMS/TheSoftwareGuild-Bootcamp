@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\balance",
+    "\\src\\app\\balance\\balance-home",
+    "\\src\\app\\exit",
+    "\\src\\app\\exit\\exit-home",
+    "\\src\\app\\home",
+    "\\src\\app\\home\\home-home",
+    "\\src\\shared"
+  ],
+  "SelectedNode": "\\src\\shared\\accounts.service.ts",
+  "PreviewInSolutionExplorer": false
+}
