@@ -1,0 +1,5 @@
+<div class="container">
+    <h1 class="text-center">{{ title }}</h1>
+    <app-search-bar (submitted)="onTerm($event)"></app-search-bar>
+    <app-page-list [pages]="pages"></app-page-list>
+</div>
