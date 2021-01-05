@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org"
+           xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Test List</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        
+        <p th:if="${truth}">Truth is true</p>
+        <p th:if="${theNumber == 33}">The number is 33</p>
+        
+        <div th:switch="${aString}">
+            <p th:case="differentCase">A different case</p>
+            <p th:case="*">The default case: <span th:text="${aString}"></span></p>
+        </div>
+        
+    </body>
+</html>
